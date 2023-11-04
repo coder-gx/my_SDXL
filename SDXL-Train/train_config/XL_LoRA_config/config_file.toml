@@ -1,0 +1,67 @@
+[sdxl_arguments]
+cache_text_encoder_outputs = true
+no_half_vae = true
+min_timestep = 0
+max_timestep = 1000
+shuffle_caption = false
+
+[model_arguments]
+pretrained_model_name_or_path = "/data/gongxuan/stable-diffusion-webui/models/Stable-diffusion/sd_xl_base_1.0.safetensors"
+
+[dataset_arguments]
+debug_dataset = false
+in_json = "/data/gongxuan/sdxl_data/meta_lt.json"
+train_data_dir = "/data/gongxuan/sdxl_data/nahida"
+dataset_repeats = 10
+keep_tokens = 0
+resolution = "1024,1024"
+color_aug = false
+token_warmup_min = 1
+token_warmup_step = 0
+
+[training_arguments]
+output_dir = "/data/gongxuan/SDXL-Train/outputs/LoRA"
+output_name = "sdxl_lora"
+save_precision = "fp16"
+save_every_n_epochs = 2
+train_batch_size = 4
+max_token_length = 75
+mem_eff_attn = false
+sdpa = true
+xformers = false
+max_train_epochs = 10
+max_data_loader_n_workers = 8
+persistent_data_loader_workers = true
+gradient_checkpointing = true
+gradient_accumulation_steps = 1
+mixed_precision = "fp16"
+
+[logging_arguments]
+log_with = "tensorboard"
+logging_dir = "/data/gongxuan/SDXL-Train/content/lora/logs"
+log_prefix = "sdxl_lora"
+
+[sample_prompt_arguments]
+sample_every_n_epochs = 1
+sample_sampler = "euler_a"
+
+[saving_arguments]
+save_model_as = "safetensors"
+
+[optimizer_arguments]
+optimizer_type = "AdaFactor"
+learning_rate = 1e-5
+max_grad_norm = 0
+optimizer_args = [ "scale_parameter=False", "relative_step=False", "warmup_init=False",]
+lr_scheduler = "constant_with_warmup"
+lr_warmup_steps = 80
+
+[additional_network_arguments]
+no_metadata = false
+network_module = "networks.lora"
+network_dim = 64
+network_alpha = 32
+network_args = [ "conv_dim=32", "conv_alpha=16",]
+network_train_unet_only = true
+
+[advanced_training_config]

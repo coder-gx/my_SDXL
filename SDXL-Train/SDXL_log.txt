@@ -1,0 +1,180 @@
+(myconda) root@wExgQA:/teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL# sh train_ft_SDXL.sh 
+2023-08-01 11:03:59.693195: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-01 11:03:59.889365: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-08-01 11:04:00.583130: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:00.583231: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:00.583243: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-08-01 11:04:05.042673: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-01 11:04:05.103157: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-01 11:04:05.238688: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-08-01 11:04:05.303923: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-08-01 11:04:05.960003: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:05.960122: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:05.960133: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-08-01 11:04:06.000181: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:06.000275: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/cuda/lib64/:/usr/lib/x86_64-linux-gnu
+2023-08-01 11:04:06.000286: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/root/miniconda3/envs/myconda/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libtorch_cuda_cu.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+/root/miniconda3/envs/myconda/lib/python3.9/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: libtorch_cuda_cu.so: cannot open shared object file: No such file or directory
+  warn(f"Failed to load image Python extension: {e}")
+Loading settings from /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/output/XL_config/config_file.toml...
+/teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/output/XL_config/config_file
+noise_offset is set to 0.0357 / noise_offsetが0.0357に設定されました
+prepare tokenizers
+load tokenizer from cache: /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/utils_json/clip-vit-large-patch14
+Loading settings from /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/output/XL_config/config_file.toml...
+/teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/output/XL_config/config_file
+noise_offset is set to 0.0357 / noise_offsetが0.0357に設定されました
+prepare tokenizers
+load tokenizer from cache: /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/utils_json/clip-vit-large-patch14
+load tokenizer from cache: /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/utils_json/CLIP-ViT-bigG-14-laion2B-39B-b160k
+load tokenizer from cache: /teams/ai_model_1667305326/WujieAITeam/private/dj/kohya-trainer-SDXL/utils_json/CLIP-ViT-bigG-14-laion2B-39B-b160k
+update token length: 225
+update token length: 225
+Training with captions.
+Training with captions.
+loading existing metadata: /teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL/json/0801_Rocky_v1_meta_lat.json
+loading existing metadata: /teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL/json/0801_Rocky_v1_meta_lat.json
+metadata has bucket info, enable bucketing / メタデータにbucket情報があるためbucketを有効にします
+using bucket info in metadata / メタデータ内のbucket情報を使います
+metadata has bucket info, enable bucketing / メタデータにbucket情報があるためbucketを有効にします
+using bucket info in metadata / メタデータ内のbucket情報を使います
+[Dataset 0]
+  batch_size: 8
+  resolution: (1024, 1024)
+  enable_bucket: True
+  min_bucket_reso: None
+  max_bucket_reso: None
+  bucket_reso_steps: None
+  bucket_no_upscale: None
+
+  [Subset 0 of Dataset 0]
+    image_dir: "/teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL"
+    image_count: 1746
+    num_repeats: 10
+    shuffle_caption: False
+    keep_tokens: 0
+    caption_dropout_rate: 0
+    caption_dropout_every_n_epoches: 0
+    caption_tag_dropout_rate: 0
+    color_aug: False
+    flip_aug: False
+    face_crop_aug_range: None
+    random_crop: False
+    token_warmup_min: 1,
+    token_warmup_step: 0,
+    metadata_file: /teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL/json/0801_Rocky_v1_meta_lat.json
+
+
+[Dataset 0]
+  batch_size: 8
+  resolution: (1024, 1024)
+  enable_bucket: True
+  min_bucket_reso: None
+  max_bucket_reso: None
+  bucket_reso_steps: None
+  bucket_no_upscale: None
+
+  [Subset 0 of Dataset 0]
+    image_dir: "/teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL"
+    image_count: 1746
+    num_repeats: 10
+    shuffle_caption: False
+    keep_tokens: 0
+    caption_dropout_rate: 0
+    caption_dropout_every_n_epoches: 0
+    caption_tag_dropout_rate: 0
+    color_aug: False
+    flip_aug: False
+    face_crop_aug_range: None
+    random_crop: False
+    token_warmup_min: 1,
+    token_warmup_step: 0,
+    metadata_file: /teams/ai_model_1667305326/WujieAITeam/private/dj/datasets/宋韵模型素材_all_SDXL/json/0801_Rocky_v1_meta_lat.json
+
+
+[Dataset 0]
+loading image sizes.
+[Dataset 0]
+loading image sizes.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1746/1746 [00:00<00:00, 1115159.86it/s]
+make buckets
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1746/1746 [00:00<00:00, 809736.27it/s]
+make buckets
+number of images (including repeats) / 各bucketの画像枚数（繰り返し回数を含む）
+bucket 0: resolution (640, 1024), count: 10
+bucket 1: resolution (704, 1024), count: 1330
+bucket 2: resolution (768, 1024), count: 15130
+bucket 3: resolution (1024, 704), count: 20
+bucket 4: resolution (1024, 960), count: 10
+bucket 5: resolution (1024, 1024), count: 960
+number of images (including repeats) / 各bucketの画像枚数（繰り返し回数を含む）
+bucket 0: resolution (640, 1024), count: 10
+bucket 1: resolution (704, 1024), count: 1330
+bucket 2: resolution (768, 1024), count: 15130
+bucket 3: resolution (1024, 704), count: 20
+bucket 4: resolution (1024, 960), count: 10
+bucket 5: resolution (1024, 1024), count: 960
+mean ar error (without repeats): 0.0
+mean ar error (without repeats): 0.0
+prepare accelerator
+prepare accelerator
+loading model for process 0/2
+load StableDiffusion checkpoint: /mnt/WujieAITeam/models/test/4Guofeng4XL_v10RealBeta.safetensors
+/root/miniconda3/envs/myconda/lib/python3.9/site-packages/safetensors/torch.py:98: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  with safe_open(filename, framework="pt", device=device) as f:
+building U-Net
+loading U-Net from checkpoint
+U-Net:  <All keys matched successfully>
+building text encoders
+loading text encoders from checkpoint
+text encoder 1: <All keys matched successfully>
+text encoder 2: <All keys matched successfully>
+building VAE
+loading VAE from checkpoint
+VAE: <All keys matched successfully>
+loading model for process 1/2
+load StableDiffusion checkpoint: /mnt/WujieAITeam/models/test/4Guofeng4XL_v10RealBeta.safetensors
+/root/miniconda3/envs/myconda/lib/python3.9/site-packages/safetensors/torch.py:98: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  with safe_open(filename, framework="pt", device=device) as f:
+building U-Net
+loading U-Net from checkpoint
+U-Net:  <All keys matched successfully>
+building text encoders
+loading text encoders from checkpoint
+text encoder 1: <All keys matched successfully>
+text encoder 2: <All keys matched successfully>
+building VAE
+loading VAE from checkpoint
+VAE: <All keys matched successfully>
+Enable xformers for U-Net
+Disable Diffusers' xformers
+Enable xformers for U-Net
+[Dataset 0]
+caching text encoder outputs.
+checking cache existence...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1746/1746 [00:00<00:00, 1726775.47it/s]
+[Dataset 0]
+caching text encoder outputs.
+checking cache existence...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1746/1746 [00:00<00:00, 1821705.17it/s]
+caching text encoder outputs...
+  0%|                                                                                                                                                      | 0/219 [00:00<?, ?it/s]caching text encoder outputs...
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 219/219 [00:40<00:00,  5.40it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 219/219 [00:40<00:00,  5.41it/s]
+use Adafactor optimizer | {'scale_parameter': False, 'relative_step': False, 'warmup_init': False}
+number of models: 1
+number of trainable parameters: 2567463684
+prepare optimizer, data loader etc.
+use Adafactor optimizer | {'scale_parameter': False, 'relative_step': False, 'warmup_init': False}
+running training / 学習開始
+  num examples / サンプル数: 17460
+  num batches per epoch / 1epochのバッチ数: 1093
+  num epochs / epoch数: 100
+  batch size per device / バッチサイズ: 8
+  gradient accumulation steps / 勾配を合計するステップ数 = 1
+  total optimization steps / 学習ステップ数: 109100
